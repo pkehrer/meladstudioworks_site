@@ -1,0 +1,36 @@
+---
+---
+    
+@import "bootstrap";
+
+.nav-row {
+    margin-top:15px;
+}
+
+.left-nav * {
+    margin-top: 10px;
+    float: right;
+}
+
+.right-nav * {
+    margin-top: 10px;
+    float: left;
+}
+
+.logo {
+    display: block;
+    margin:0 auto;
+    width:200px;
+}
+
+.nav-text *{
+    font-size: 1.2em;
+    font-family: Raleway;
+    line-height: 3;
+    color: #9F99A3;
+    margin-left: 10px;
+}
+
+div img {
+    width: 100%
+}

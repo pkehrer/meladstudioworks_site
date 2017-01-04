@@ -5,6 +5,7 @@
     
     <link rel="shortcut icon" type="image/png" href="{{site.github.url}}/img/favicon.png">
     <link rel="stylesheet" type="text/css" href="{{site.github.url}}/css/site.css">
+    <link rel="stylesheet" type="text/css" href="{{site.github.url}}/css/foundation-icons.css">
     <script type="text/javascript" src="{{site.github.url}}/js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="{{site.github.url}}/js/bootstrap.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'/>
@@ -20,16 +21,18 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="nav-background"></div>
+    
+    <div class="container page-wrap">
     
     <div class="row nav-row">
         
-        <div class="col-lg-2 nav-item"><a class="pull-right" href="{{site.github.url}}/">HOME</a></div>
+        <div class="col-lg-2 nav-item"><a class="" href="{{site.github.url}}/">HOME</a></div>
         
-        <div class="col-lg-2 nav-item"><a class="pull-right" href="{{site.github.url}}/about">ABOUT</a></div>
+        <div class="col-lg-2 nav-item"><a class="" href="{{site.github.url}}/about">ABOUT</a></div>
         
         <div class="col-lg-4">
-            <img class="logo" src="{{site.github.url}}/img/logo.jpeg"></img>
+            <img class="logo" src="{{site.github.url}}/img/logo.png"></img>
         </div>
     
         <div class="dropdown col-lg-2 nav-item">
@@ -37,7 +40,6 @@
                          id="dropdownMenu" 
                          data-toggle="dropdown"
                          class="dropdown-toggle">
-                         <!--href="{{site.github.url}}/currentwork">-->
                         CURRENT WORK
                         <span class="caret"></span>
                     </a>
@@ -50,11 +52,48 @@
         </div>
         <div class="col-lg-2 nav-item"><a href="{{site.github.url}}/contact">CONTACT</a></div>
     </div>
-    
-    
-    
+    <div class="container-spacer"></div>
     {{ content }}
-    
+    <div class="container-spacer"></div>
     </div>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            
+            <div class="row">
+                <div class="col-lg-1 col-lg-offset-1">
+                    <i class="fi-telephone pull-right"></i>
+                </div>
+                <div class="col-lg-1 footer-icon-label">
+                    617.642.7865
+                </div>
+                <div class="col-lg-1">
+                    <i class="fi-address-book pull-right"></i>
+                </div>
+                <div class="col-lg-3 footer-icon-label">
+                    17 Ashley Road <br/>
+                    N Brookfield, MA 01535
+                </div>
+                <div class="col-lg-4 footer-social">
+                    <a href="https://www.facebook.com/MeladStudioWorks" target="_blank" class="pull-right">
+                        <i class="fi-social-facebook"></i>
+                    </a>
+                    <a href="http://pinterest.com/meladstudiowrks/" target="_blank" class="pull-right">
+                        <i class="fi-social-pinterest"></i>
+                    </a>
+                    <a href="https://www.instagram.com/meladstudioworks/" target="_blank" class="pull-right">
+                        <i class="fi-social-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-copyright">
+                · Copyright © 2017 · 
+                <a href="mailto:paulhkehrer@gmail.com" target="_blank">Paul Kehrer</a>
+                ·
+            </div>
+        </div>
+    </footer>
+    
 </body>
 </html>

@@ -5,7 +5,7 @@ sass:
   sass_dir: _sass
   
 collections:
-  work:
+  works:
     output: true
   
 gems:

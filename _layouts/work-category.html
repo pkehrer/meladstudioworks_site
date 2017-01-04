@@ -1,0 +1,21 @@
+---
+layout: default
+style: category.css
+---
+
+<div class="category-row">
+    <h2>{{page.title}}</h2>
+    <br/><br/>
+    <div class="row">
+    {% for w in site.works %}
+        {% if w.category == page.category %}
+            <div class="col-lg-3 category-work-item">
+                <a href="{{w.url}}">
+                    {{w.title}}<br/>
+                    <img src="{{site.github.url}}/img/{{w.image}}"/>
+                </a>
+            </div>
+        {% endif %}
+    {% endfor %}
+    </div>
+</div>

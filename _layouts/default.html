@@ -5,35 +5,50 @@
     
     <link rel="shortcut icon" type="image/png" href="{{site.github.url}}/img/favicon.png">
     <link rel="stylesheet" type="text/css" href="{{site.github.url}}/css/site.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script type="text/javascript" src="{{site.github.url}}/js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="{{site.github.url}}/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'/>
+    
     {% if page.style %}
         <link rel="stylesheet" href="{{site.github.url}}/css/{{ page.style }}" />
     {% endif %}
+    {% if layout.style %}
+        <link rel="stylesheet" href="{{site.github.url}}/css/{{ layout.style }}" />
+    {% endif %}
     
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'/>
+    
 </head>
 
 <body>
     <div class="container">
     
     <div class="row nav-row">
-        <div class="col-md-4 left-nav">
-            <ul class="nav navbar-nav nav-text">
-                <li><a href="{{site.github.url}}/">HOME</a></li>
-                <li><a href="{{site.github.url}}/about">ABOUT</a></li>
-            </ul>
-        </div>
-    
-        <div class="col-md-4">
+        
+        <div class="col-lg-2 nav-item"><a class="pull-right" href="{{site.github.url}}/">HOME</a></div>
+        
+        <div class="col-lg-2 nav-item"><a class="pull-right" href="{{site.github.url}}/about">ABOUT</a></div>
+        
+        <div class="col-lg-4">
             <img class="logo" src="{{site.github.url}}/img/logo.jpeg"></img>
         </div>
     
-        <div class="right-nav col-md-4">
-            <ul class="nav navbar-nav nav-text">
-                <li><a href="{{site.github.url}}/currentwork">CURRENT WORK</a></li>
-                <li><a href="{{site.github.url}}/contact">CONTACT</a></li>
-            </ul>
+        <div class="dropdown col-lg-2 nav-item">
+                    <a type="button"
+                         id="dropdownMenu" 
+                         data-toggle="dropdown"
+                         class="dropdown-toggle">
+                         <!--href="{{site.github.url}}/currentwork">-->
+                        CURRENT WORK
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                        <li><a href="{{site.github.url}}/work/low-tables-category">Low Tables</a></li>
+                        <li><a href="{{site.github.url}}/work/seating-category">Seating</a></li>
+                        <li><a href="{{site.github.url}}/work/storage-category">Storage</a></li>
+                        <li><a href="{{site.github.url}}/work/tabletop-category">Tabletop</a></li>
+                    </ul>              
         </div>
+        <div class="col-lg-2 nav-item"><a href="{{site.github.url}}/contact">CONTACT</a></div>
     </div>
     
     

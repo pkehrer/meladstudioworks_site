@@ -4,14 +4,6 @@ markdown: kramdown
 sass:
   sass_dir: _sass
   
-collections:
-  works:
-    output: true
-  
-gems:
-  - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
-
-theme: jekyll-theme-minimal

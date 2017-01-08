@@ -23,31 +23,35 @@
 <body>
     <div class="container">
         <div class="row nav-row" style="margin-top:20px">
-            <div class="col-md-2 col-md-offset-1 logo-div">
+            <div class="col-sm-2 col-sm-offset-1 logo-div">
                 <a href="{{site.github.url}}/">
                     <img class="logo" src="{{site.github.url}}/img/logo.png" />
                 </a>
             </div>
-            <div class="col-md-1 col-md-offset-5 nav-item">
-                <a class="" href="{{site.github.url}}/about">ABOUT</a>
-            </div>
-            <div class="col-md-1 nav-item">
-                <span><a href="{{site.github.url}}/contact">CONTACT</a></span>
-            </div>
-            <div class="col-md-1 dropdown nav-item">
-                <a type="button"
-                         id="dropdownMenu" 
-                         data-toggle="dropdown"
-                         class="dropdown-toggle">
-                        WORK
-                        <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
-                        <li><a href="{{site.github.url}}/category/low-tables">Low Tables</a></li>
-                        <li><a href="{{site.github.url}}/category/seating">Seating</a></li>
-                        <li><a href="{{site.github.url}}/category/storage">Storage</a></li>
-                        <li><a href="{{site.github.url}}/category/tabletop">Tabletop</a></li>
-                    </ul>
+            <div class="col-sm-8">
+                
+                <div class="col-md-2 col-md-offset-5 nav-item">
+                    <a class="" href="{{site.github.url}}/about">ABOUT</a>
+                </div>
+                <div class="col-md-2 nav-item">
+                    <span><a href="{{site.github.url}}/contact">CONTACT</a></span>
+                </div>
+                <div class="col-md-2 dropdown nav-item">
+                    <a type="button"
+                            id="dropdownMenu" 
+                            data-toggle="dropdown"
+                            class="dropdown-toggle">
+                            WORK
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                            <li><a href="{{site.github.url}}/category/low-tables">Low Tables</a></li>
+                            <li><a href="{{site.github.url}}/category/seating">Seating</a></li>
+                            <li><a href="{{site.github.url}}/category/storage">Storage</a></li>
+                            <li><a href="{{site.github.url}}/category/tabletop">Tabletop</a></li>
+                        </ul>
+                </div>
+
             </div>
         </div>
 {{ content }}
